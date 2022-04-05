@@ -7,4 +7,4 @@ Python Webapp - Postgres - Heroku - Flask
 - Python 3
 - Install pipenv: `sudo pip install pipenv`
 - Python environment: `pipenv shell`
-- 
+=> In the project, we should have `Pipfile` file
