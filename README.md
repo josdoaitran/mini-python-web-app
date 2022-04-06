@@ -9,7 +9,7 @@ Python Webapp - Postgres - Heroku - Flask
 - Python environment: `pipenv shell`
 => In the project, we should have `Pipfile` file
 - Install flash by command `pipenv install flash`
-- 
+- Install Postgress local Database `docker pull postgres`
 - PostgreSQL Python Libraries by these commands:
   + `brew install libxml2 libxmlsec1 pkg-config`
   + `pipenv install psycopg2`
