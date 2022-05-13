@@ -23,6 +23,16 @@ Start PGADmin
 (If any error on MAC, run this command: `xcode-select --install`)
   + `pipenv install flask_sqlalchemy`
 
+- Create tables:
+```
+❯ python3
+Python 3.8.2 (v3.8.2:7b3ab5921f, Feb 24 2020, 17:52:18) 
+[Clang 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from app import db
+>>> db.create_all();
+```
+
 ## References:
 - Code: https://github.com/bradtraversy/python_feedback_app
 - Deployment: https://gist.github.com/bradtraversy/0029d655269c8a972df726ed0ac56b88
