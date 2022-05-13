@@ -26,3 +26,4 @@ Start PGADmin
 ## References:
 - Code: https://github.com/bradtraversy/python_feedback_app
 - Deployment: https://gist.github.com/bradtraversy/0029d655269c8a972df726ed0ac56b88
+- Tutorial: https://www.youtube.com/watch?v=w25ea_I89iM

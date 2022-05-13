@@ -8,32 +8,35 @@
     <title>Please rate your service</title>
   </head>
   <body>
+    
     <div class="container">
-      <img src="../static/logo.png" alt="Lexus" class="logo" />
-      {% if message %}
+      <img src="../static/testing.jpg" alt="Testing" class="logo" />
+      <!-- {% if message %}
       <p class="message">{{ message | safe }}</p>
-      {% endif %}
+      {% endif %} -->
+      <h2>Submit your comments after you receive consultance services</h2>
       <form action="/submit" method="POST">
         <div class="form-group">
           <h3>Customer Name</h3>
           <input
             type="text"
             name="customer"
-            placeholder="Name of vehicle owner"
+            placeholder="Name of customer"
           />
         </div>
         <div class="form-group">
-          <h3>Dealer</h3>
-          <select name="dealer">
-            <option value="">Select Dealer</option>
-            <option value="Tom Smith">Tom Smith</option>
-            <option value="Karen Swanson">Karen Swanson</option>
-            <option value="Jim Johnson">Jim Johnson</option>
-            <option value="Shauna Gifford">Shauna Gifford</option>
+          <h3>Consultant</h3>
+          <select name="consultant">
+            <option value="">Select who consulted you: </option>
+            <option value="Jayleen Whitney">Jayleen Whitney</option>
+            <option value="Mayra Riggs">Mayra Riggs</option>
+            <option value="Miah Camacho">Miah Camacho</option>
+            <option value="Mina Liu">Mina Liu</option>
+            <option value="Ali Petty">Ali Petty</option>
           </select>
         </div>
         <div class="form-group">
-          <h3>Please rate your dealer</h3>
+          <h3>Please rate your consultant</h3>
           <input type="radio" name="rating" value="1" /> 1
           <input type="radio" name="rating" value="2" /> 2
           <input type="radio" name="rating" value="3" /> 3
