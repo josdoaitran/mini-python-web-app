@@ -8,7 +8,7 @@ ENV = 'dev'
 
 if ENV == 'dev':
     app.debug = True
-    app.config['SQLALCHEMY_DATABASE_URI'] = ''
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:5432@192.168.1.63/feedbackdb'
 else:
     app.debug = False
     app.config['SQLALCHEMY_DATABASE_URI'] = ''
