@@ -33,6 +33,16 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> db.create_all();
 ```
 
+- Run app:
+`python app.py`
+
+- Deploy to Heroku
++ Create an account Heroku
++ Create a new app.
++ Add Addons: Postgres https://elements.heroku.com/addons/heroku-postgresql
++ Create Addons and add app that we already create before.
+
+
 ## References:
 - Code: https://github.com/bradtraversy/python_feedback_app
 - Deployment: https://gist.github.com/bradtraversy/0029d655269c8a972df726ed0ac56b88
