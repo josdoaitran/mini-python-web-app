@@ -41,6 +41,9 @@ Type "help", "copyright", "credits" or "license" for more information.
 + Create a new app.
 + Add Addons: Postgres https://elements.heroku.com/addons/heroku-postgresql
 + Create Addons and add app that we already create before.
++ Install Heroku Cli
++ Login Heroku in cli
++ Run command `heroku config --app app_name`
 
 
 ## References:
