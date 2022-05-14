@@ -32,7 +32,6 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> from app import db
 >>> db.create_all();
 ```
-
 - Run app:
 `python app.py`
 
