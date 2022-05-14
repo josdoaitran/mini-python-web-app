@@ -44,6 +44,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 + Install Heroku Cli
 + Login Heroku in cli
 + Run command `heroku config --app app_name`
++ Add remote: `heroku git:remote -a testing4everyonefeedback`
 
 
 ## References:
