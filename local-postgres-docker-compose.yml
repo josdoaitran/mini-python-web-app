@@ -1,0 +1,30 @@
+version: '3.8'
+networks:
+  databaseNet:
+    external: true
+
+services:
+  db:
+    container_name: pg_container
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: network-example-app-user
+      POSTGRES_DB: network-example-app
+      POSTGRES_PASSWORD: network-example-app-password
+
+    ports:
+      - "5432:5432"
+    networks:
+      - databaseNet
+  pgadmin:
+    container_name: pgadmin4_container
+    image: dpage/pgadmin4
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: testing4everyone.vn@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: P@SS
+    ports:
+      - "5050:80"
+    networks:
+      - databaseNet

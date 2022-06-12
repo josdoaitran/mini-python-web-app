@@ -4,18 +4,11 @@ Python Webapp - Postgres - Heroku - Flask
 
 ## Installation:
 
-- Python 3
+- Python 3: https://www.python.org/downloads/
 - Install pipenv: `sudo pip install pipenv`
 - Python environment: `pipenv shell`
 => In the project, we should have `Pipfile` file
 - Install flash by command `pipenv install flash`
-- Install Postgress local Database `docker pull postgres`
-Start Postgres database
-`docker run --name postgresql -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=Password@12345 -p 5432:5432 -v /data:/var/lib/postgresql/data -d postgres`
-- PGADmin Docker: `docker pull dpage/pgadmin4:latest`
-Start PGADmin
-`docker run --name my-pgadmin -p 5555:80 -e 'PGADMIN_DEFAULT_EMAIL=testingforevrything@gmail.com' -e 'PGADMIN_DEFAULT_PASSWORD=P@SS'-d dpage/pgadmin4`
-- Install Postgres `brew install postgres`
 - PostgreSQL Python Libraries by these commands:
   + `brew install libxml2 libxmlsec1 pkg-config`
   + `pipenv install psycopg2`
@@ -23,7 +16,20 @@ Start PGADmin
 (If any error on MAC, run this command: `xcode-select --install`)
   + `pipenv install flask_sqlalchemy`
 
-- Create tables:
+## Setup Database:
+
+- Install Postgress local Database `docker pull postgres`
+Start Postgres database
+`docker run --name postgresql -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=Password@12345 -p 5432:5432 -v /data:/var/lib/postgresql/data -d postgres`
+- PGADmin Docker: `docker pull dpage/pgadmin4:latest`
+Start PGADmin
+`docker run --name my-pgadmin -p 5555:80 -e 'PGADMIN_DEFAULT_EMAIL=testingforevrything@gmail.com' -e 'PGADMIN_DEFAULT_PASSWORD=P@SS'-d dpage/pgadmin4`
+- Install Postgres `brew install postgres`
+
+Or we can use `local-postgres-docker-compose.yml` to set up Postgres Database quickly with command `docker-compose -f local-postgres-docker-compose.yml up -d`
+
+
+## Create tables:
 ```
 ❯ python3
 Python 3.8.2 (v3.8.2:7b3ab5921f, Feb 24 2020, 17:52:18) 
