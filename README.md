@@ -7,6 +7,15 @@ Python Webapp - Postgres - Heroku - Flask
 - Python 3: https://www.python.org/downloads/
 - Install library: `pip install requirements.txt `
 
+and to make sure all dependencies, you can run these command:
+
+```
+pipenv install psycopg2
+pipenv install psycopg2-binary
+ipenv install flask_sqlalchemy
+ipenv install flash
+```
+
 ## Setup Database:
 
 - Install Postgress local Database `docker pull postgres`
